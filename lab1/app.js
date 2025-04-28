@@ -5,3 +5,5 @@ let number3 = 0xff;
 var firstName = "Abdelrahman";
 var middleName = 'Abdelfattah';
 var lastName = `Elkhouly`;
+
+let flag = true;
