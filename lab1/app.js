@@ -7,3 +7,5 @@ var middleName = 'Abdelfattah';
 var lastName = `Elkhouly`;
 
 let flag = true;
+
+console.log("This is the external javascript file");
