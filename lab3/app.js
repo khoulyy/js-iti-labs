@@ -28,13 +28,16 @@ document.title = date.toLocaleString();
 console.log(document.title);
 
 
-let url = location.search;
-let search = url.substring(1);
+if (location.search) {
+    let url = location.search;
+    let search = url.substring(1);
 
-let arr = search.split("&");
-let obj = {};
-arr.forEach((elem) => {
-    let keyValue = elem.split("=");
-    obj[keyValue[0]] = keyValue[1];
-});
-console.log(obj);
+    let arr = search.split("&");
+    let obj = {};
+    arr.forEach((elem) => {
+        let keyValue = elem.split("=");
+        obj[keyValue[0]] = keyValue[1];
+    });
+    console.log(obj);
+
+}
