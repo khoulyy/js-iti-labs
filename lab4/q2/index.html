@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .departments {
+            display: flex;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div class="departments">
+            <label>Departments: </label>
+            <input type="radio" id="SD" name="courses" value="SD">
+            <label for="SD">SD</label><br>
+            <input type="radio" id="OS" name="courses" value="OS">
+            <label for="OS">OS</label><br>
+            <input type="radio" id="EL" name="courses" value="EL">
+            <label for="EL">EL</label>
+
+        </div>
+        <label for="name">Student Name: </label>
+        <input type="text" name="name" id="name">
+        <br>
+        <br>
+        <label for="grade">Student Grade: </label>
+        <input type="text" name="grade" id="grade">
+
+        <br>
+        <button class="add" type="submit">Add</button>
+
+        <br>
+        <label for="sort">sort</label>
+        <select name="sort" id="sort">
+            <option value="name">Name</option>
+            <option value="grade">Grade</option>
+        </select>
+
+        <br>
+
+        <label for="filter">Filter</label>
+        <select id="filter">
+            <option value="all">All</option>
+            <option value="pass">Pass</option>
+            <option value="fail">Fail</option>
+        </select>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Grade</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </form>
+    <script src="app.js"></script>
+</body>
+
+</html>

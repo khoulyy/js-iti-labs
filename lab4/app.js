@@ -36,5 +36,4 @@ function slide() {
 
 function stop() {
     clearInterval(intervalId);
-    intervalId = null;
 }
