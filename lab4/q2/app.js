@@ -73,6 +73,12 @@ function renderTable() {
     data.forEach((student) => {
         const row = document.createElement("tr");
 
+        if (student.grade < 60) {
+            row.style.backgroundColor = "rgba(255, 0, 0, 0.2)"; // light red
+        } else {
+            row.style.backgroundColor = "rgba(0, 128, 0, 0.2)"; // light green
+        }
+
         row.innerHTML = `
       <td>${student.name}</td>
       <td>${student.grade}</td>
