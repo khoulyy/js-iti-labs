@@ -74,9 +74,9 @@ function renderTable() {
         const row = document.createElement("tr");
 
         if (student.grade < 60) {
-            row.style.backgroundColor = "rgba(255, 0, 0, 0.2)"; // light red
+            row.style.backgroundColor = "rgba(255, 0, 0, 0.2)";
         } else {
-            row.style.backgroundColor = "rgba(0, 128, 0, 0.2)"; // light green
+            row.style.backgroundColor = "rgba(0, 128, 0, 0.2)";
         }
 
         row.innerHTML = `
